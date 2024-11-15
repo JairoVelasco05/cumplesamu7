@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Invitación a Fiesta Pokémon</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+  <div class="container">
+    <div id="pokeballContainer">
+      <div id="pokeball" style="cursor: pointer;">
+        <img src="imagenes/pokeball.png" alt="Pokébola">
+      </div>
+      <p>Presiona la Pokébola</p>
+    </div>
+  
+    <audio id="pokeAudio" src="audio/invitacion.mp4"></audio>
+
+    <div id="card" class="card hidden">
+      <div class="invitation">
+        <!-- Imagen de fondo de la Pokébola -->
+        <img src="imagenes/fondo.jpg" alt="Fondo Pokébola" class="background-image">
+        
+        <div id="mapContainer">
+          <p>¿Cómo llegar?</p>
+          <a href="https://maps.app.goo.gl/DTzMq5f6KyxHpvtt6" target="_blank">Ver ruta en Google Maps</a>
+        </div>
+
+        <div class="text-container">
+          <p>¡Te elijo para que me acompañes a mi cumpleaños #7!</p>
+          <h1 class="name">Samuel Velasco Marquez</h1>
+          <p class="details">
+            23 noviembre<br>
+            calle 37#41g-73<br>
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img src="imagenes/sam.png" alt="Pikachu" class="pikachu">
+        </div>
+      </div>
+
+      <!-- Input para el nombre de entrenador y botón de confirmación -->
+      <input id="trainerName" type="text" placeholder="Tu nombre de entrenador" class="input">
+      <button id="confirmButton" class="button">¡Confirmar asistencia!</button>
+      <p id="confirmationMessage" class="confirmation hidden">¡Gracias por confirmar! ¡Nos vemos pronto!</p>
+    </div>
+  </div>
+
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
